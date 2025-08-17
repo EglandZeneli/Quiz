@@ -220,7 +220,7 @@ if not st.session_state.finished:
             st.session_state.answered = False
             if st.session_state.current_q >= total:
                 st.session_state.finished = True
-           st.experimental_rerun()
+            st.rerun()
 
 
 # ---------- FINISH ----------
@@ -238,4 +238,4 @@ else:
         st.session_state.current_q = 0
         st.session_state.score = 0
         st.session_state.finished = False
-      st.experimental_rerun()
+        st.rerun()
